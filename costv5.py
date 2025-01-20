@@ -8,7 +8,7 @@ from scipy.interpolate import make_interp_spline
 
 # Paths to the saved models
 model_paths = {
-    "XGBoost": "D:/CostEstv/Model/xgboost_model.pkl",
+    "XGBoost": "./Model/xgboost_model.pkl",
     
 }
 #"Random Forest": "D:/CostEstv/Model/random_forest_model.pkl",
