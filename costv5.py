@@ -47,7 +47,7 @@ with st.sidebar:
 
     # Numerical inputs with sliders
     st.subheader("Numerical Features")
-    pressure = st.slider("Pressure", min_value=50.0, max_value=300.0, value=200.0, step=10.0)
+    pressure = st.slider("Pressure", min_value=50.0, max_value=300.0, value=200.0, step=5.0)
     bore = st.slider("Bore", min_value=50.0, max_value=500.0, value=70.0, step=1.0)
     rod_diameter = st.slider("Rod Diameter", min_value=10.0, max_value=500.0, value=100.0, step=1.0)
     stroke = st.slider("Stroke", min_value=50.0, max_value=1500.0, value=800.0, step=1.0)
