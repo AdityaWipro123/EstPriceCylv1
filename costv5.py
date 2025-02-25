@@ -84,7 +84,7 @@ with col1:
     lower_bound = prediction * 0.95
     upper_bound = prediction * 1.05
 
-    st.metric("Predicted Price", f"INR {prediction:.2f}")
+    st.metric("Predicted Cost", f"INR {prediction:.2f}")
     st.metric("Prediction Range", f"INR {lower_bound:.2f} - INR {upper_bound:.2f}")
 
 with col2:
