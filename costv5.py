@@ -27,7 +27,7 @@ model_metrics = {
 
 # Streamlit app UI
 st.set_page_config(layout="wide")
-st.title("Cylinder Price Prediction")
+st.title("Cylinder Cost Prediction")
 
 # Layout setup
 with st.sidebar:
@@ -79,7 +79,8 @@ with col1:
         prediction = selected_model.predict(input_data)[0]
         return prediction
 
-    prediction = make_prediction(pressure, bore, rod_diameter, stroke, cushioning, mounting)
+    prediction = make_prediction(pressure, bore, rod_diameter, stroke, cushioning, mounting)/1.2
+    
     lower_bound = prediction * 0.95
     upper_bound = prediction * 1.05
 
